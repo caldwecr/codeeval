@@ -43,6 +43,8 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
     $r1 = new Rectangle($ll1, $ur1);
     $r2 = new Rectangle($ll2, $ur2);
 
+    $a1 = $r1->getArea();
+    $a2 = $r2->getArea();
 
     $pointsInside1 = array();
     $pointsInside2 = array();
@@ -69,16 +71,24 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
             if($count1in2 === 0) {
                 return $baseArea;
             } else if ($count1in2 === 2) {
-                // The two points are going to either have matching x values or matching y values
+                $intersectR = Rectangle::getIntersectingRectangleForTwoPoints($pointsInside2, $r2);
+                return $baseArea - $intersectR->getArea();
+            } else if ($count1in2 === 4) {
+                return $r2->getArea();
             }
-            break;
+            break; // This isn't necessary but is included for readability
         case 1:
             $intersectR = new Rectangle(current($pointsInside1), current($pointsInside2));
             return $baseArea - $intersectR->getArea();
-            break;
+            break; // This isn't necessary but is included for readability
+        case 2:
+            $intersectR = Rectangle::getIntersectingRectangleForTwoPoints($pointsInside1, $r1);
+            return $baseArea - $intersectR->getArea();
+            break; // This isn't necessary but is included for readability
+        case 4:
+            return $r1->getArea();
+            break; // This isn't necessary but is included for readability
     }
-
-
 }
 
 class Point
@@ -180,5 +190,43 @@ class Rectangle
                 $p->x < $r->getMaxX() &&
                 $p->y > $r->getMinY() &&
                 $p->y < $r->getMaxY();
+    }
+
+    public static function getIntersectingRectangleForTwoPoints($pointsInside, $containingRectangle)
+    {
+        $code = 0; // Using powers of two to identify which two corners (based on array keys) are inside the containing rectangle
+        foreach($pointsInside as $key => $point) {
+            switch($key) {
+                case 'ul':
+                    $code += 2;
+                    break;
+                case 'ur':
+                    $code += 4;
+                    break;
+                case 'lr':
+                    $code += 8;
+                    break;
+                case 'll':
+                    $code += 16;
+                    break;
+            }
+        }
+        $intersectR = null;
+
+        switch($code) {
+            case 6: // ul and ur of 1 are in 2
+                $intersectR = new Rectangle(new Point($pointsInside['ul']->x, $containingRectangle->getMinY()), $pointsInside['ur']);
+                break;
+            case 12: // ur and lr of 1 are in 2
+                $intersectR = new Rectangle(new Point($containingRectangle->getMinX(), $pointsInside['lr']->y), $pointsInside['ur']);
+                break;
+            case 24: // lr and ll of 1 are in 2
+                $intersectR = new Rectangle($pointsInside['ll'], new Point($pointsInside['lr']->x, $containingRectangle->getMaxY()));
+                break;
+            case 18: // ll and ul of 1 are in 2
+                $intersectR = new Rectangle($pointsInside['ll'], new Point($containingRectangle->getMaxX(), $pointsInside['ul']->y));
+                break;
+        }
+        return $intersectR;
     }
 }

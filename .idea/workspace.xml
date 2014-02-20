@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectangles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/primePalindrome.php" afterPath="$PROJECT_DIR$/primePalindrome.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/SolutionTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/areaTwoRectangles.php" afterPath="$PROJECT_DIR$/areaTwoRectangles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeeval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +31,19 @@
       <file leaf-file-name="areaTwoRectangles.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/areaTwoRectangles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="97" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.7053292" vertical-offset="615" max-vertical-offset="2835">
+            <state line="46" column="25" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.23510972" vertical-offset="540" max-vertical-offset="3555">
               <folding>
                 <element signature="e#6#89#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetIntersectingRectangleForTwoPointsTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="65" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="615">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ReverseAndAddTests/DoReverseAndAddTest.php" />
-        <option value="$PROJECT_DIR$/reverseAndAdd.php" />
         <option value="$PROJECT_DIR$/leastCommonSubsequence.php" />
         <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetSubstringStartingWithTest.php" />
         <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSTest.php" />
@@ -91,7 +97,9 @@
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectangles.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/SolutionTest.php" />
       </list>
     </option>
   </component>
@@ -340,22 +348,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/longestCommonSubsequence.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="2310" selection-end="2310" vertical-scroll-proportion="1.9103774" vertical-offset="0" max-vertical-offset="1545">
-          <folding>
-            <element signature="e#6#89#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="19" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.6226415" vertical-offset="309" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PassTriangleTests/CalcMaxAdjSumTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="115" selection-end="208" vertical-scroll-proportion="0.18867925" vertical-offset="0" max-vertical-offset="636">
@@ -437,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="90" selection-end="199" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="33" selection-start="521" selection-end="521" vertical-scroll-proportion="0.44670847" vertical-offset="0" max-vertical-offset="638">
@@ -451,9 +436,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="90" selection-end="199" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="65" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-20.625" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/SolutionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.7288401" vertical-offset="0" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/areaTwoRectangles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="97" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.7053292" vertical-offset="615" max-vertical-offset="2835">
+        <state line="46" column="25" selection-start="1837" selection-end="1837" vertical-scroll-proportion="0.23510972" vertical-offset="540" max-vertical-offset="3555">
           <folding>
             <element signature="e#6#89#0" expanded="true" />
           </folding>
