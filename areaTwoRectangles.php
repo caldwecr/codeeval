@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: caldwecr
  * Date: 2/19/14
- * Time: 5:23 PM
  */
 
 /**
@@ -50,12 +49,15 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
     $pointsInside2 = array();
 
     $points2 = $r2->getPoints();
+    /**
+     * Despite the presence of these loops the algorithm remains O(1) as the loops do not grow in size relative to the rectangles
+     * In otherwords these loops could be rewritten as static code that checks each of the points
+     */
     foreach($points2 as $key => $point) {
         if(Rectangle::containsPoint($r1, $point)) {
             $pointsInside1[$key] = $point;
         }
     }
-    // This is really only necessary if count2in1 is 0, but I decided to leave it to always execute for simplification
     $points1 = $r1->getPoints();
     foreach($points1 as $key => $point) {
         if(Rectangle::containsPoint($r2, $point)) {
@@ -67,25 +69,25 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
     $count1in2 = count($pointsInside2);
     $baseArea = $r1->getArea() + $r2->getArea();
     switch($count2in1) {
-        case 0:
-            if($count1in2 === 0) {
+        case 0: // There are zero vertices from rectangle 2 in rectangle 1
+            if($count1in2 === 0) { // The two rectangles do not intersect
                 return $baseArea;
-            } else if ($count1in2 === 2) {
+            } else if ($count1in2 === 2) { // Rectangle 1 has two vertices in rectangle 2
                 $intersectR = Rectangle::getIntersectingRectangleForTwoPoints($pointsInside2, $r2);
                 return $baseArea - $intersectR->getArea();
-            } else if ($count1in2 === 4) {
+            } else if ($count1in2 === 4) { // Rectangle 1 is entirely inside rectangle 2
                 return $r2->getArea();
             }
             break; // This isn't necessary but is included for readability
-        case 1:
+        case 1: // There is one vertex from rectangle 2 in rectangle 1, which means there is also one vertex from rectangle 1 in rectangle 2
             $intersectR = new Rectangle(current($pointsInside1), current($pointsInside2));
             return $baseArea - $intersectR->getArea();
             break; // This isn't necessary but is included for readability
-        case 2:
+        case 2: // There are two vertices from rectangle 2 in rectangle 1
             $intersectR = Rectangle::getIntersectingRectangleForTwoPoints($pointsInside1, $r1);
             return $baseArea - $intersectR->getArea();
             break; // This isn't necessary but is included for readability
-        case 4:
+        case 4: // Rectangle 2 is entirely contained by rectangle 1
             return $r1->getArea();
             break; // This isn't necessary but is included for readability
     }
@@ -93,21 +95,23 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
 
 class Point
 {
+    /**
+     * @var float
+     */
     public $x;
+
+    /**
+     * @var float
+     */
     public $y;
 
+    /**
+     * @param float $x
+     * @param float $y
+     */
     public function __construct($x, $y) {
         $this->x = $x;
         $this->y = $y;
-    }
-
-    /**
-     * @param Point $p1
-     * @param Point $p2
-     * @return number
-     */
-    public static function distanceBetweenTwoPoints(Point $p1, Point $p2) {
-        return sqrt(pow(abs($p1->x - $p2->x), 2) + pow(abs($p1->y - $p2->y), 2));
     }
 }
 

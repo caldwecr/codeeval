@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: caldwecr
  * Date: 2/19/14
- * Time: 9:19 PM
  */
 require_once("areaTwoRectangles.php");
 
