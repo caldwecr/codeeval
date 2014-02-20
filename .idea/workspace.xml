@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/areaTwoRectangles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/primePalindrome.php" afterPath="$PROJECT_DIR$/primePalindrome.php" />
+    </list>
+    <ignored path="codeeval.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="codeeval" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="areaTwoRectangles.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/areaTwoRectangles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="97" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.7053292" vertical-offset="615" max-vertical-offset="2835">
+              <folding>
+                <element signature="e#6#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DistanceBetweenTwoPointsTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="90" selection-end="199" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunDoubleSquaresTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DoubleSquaresTests/RunDoubleSquaresTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="1" selection-start="212" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="495">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ReverseAndAddTests/DoReverseAndAddTest.php" />
+        <option value="$PROJECT_DIR$/reverseAndAdd.php" />
+        <option value="$PROJECT_DIR$/leastCommonSubsequence.php" />
+        <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetSubstringStartingWithTest.php" />
+        <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSTest.php" />
+        <option value="$PROJECT_DIR$/longestCommonSubsequence.php" />
+        <option value="$PROJECT_DIR$/PrimePalindromeTests/GetPrimesUnderTest.php" />
+        <option value="$PROJECT_DIR$/PrimePalindromeTests/IsPalindromeTest.php" />
+        <option value="$PROJECT_DIR$/PrimePalindromeTests/IsPrimePalindromeTest.php" />
+        <option value="$PROJECT_DIR$/PrimePalindromeTests/IsAPalindromeTest.php" />
+        <option value="$PROJECT_DIR$/PrimePalindromeTests/GetLargestPrimePalindromeUnderTest.php" />
+        <option value="$PROJECT_DIR$/primePalindrome.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php" />
+        <option value="$PROJECT_DIR$/areaTwoRectangles.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DoubleSquaresTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeeval" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="areaTwoRectanglesTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig" serverName="codeeval" serverId="b77cb721-338e-4d28-b030-8837af80175c">
+    <servers>
+      <server id="00f80b2d-b792-4deb-a103-e92bd0fb20e0">
+        <serverdata />
+      </server>
+      <server id="0108c542-5960-4e73-abf4-4deca2afb043">
+        <serverdata />
+      </server>
+      <server id="13d89379-5701-4beb-a71d-d724553cb519">
+        <serverdata />
+      </server>
+      <server id="1912ffd3-56af-42a7-ab0f-60d15bd6cac3">
+        <serverdata />
+      </server>
+      <server id="36d086f6-c5b7-4ee2-b216-c77d29085d90">
+        <serverdata />
+      </server>
+      <server id="3968fa87-53c8-41c8-8827-3fdc197635f2">
+        <serverdata />
+      </server>
+      <server id="46af64e8-ffa3-4348-bef3-b988d4c9e5e8">
+        <serverdata />
+      </server>
+      <server id="53691fcc-9aa2-4988-817a-f87c9e0ab6dd">
+        <serverdata />
+      </server>
+      <server id="5ac4457a-fdc4-4f5e-85a5-c6aeddeca8fc">
+        <serverdata />
+      </server>
+      <server id="5bd0940a-a23f-47be-989e-6b564ceb51ac">
+        <serverdata />
+      </server>
+      <server id="78b8f14a-f6ad-4313-a931-35e842614489">
+        <serverdata />
+      </server>
+      <server id="915ad344-4ef5-44a4-9d09-b763473ed1a6">
+        <serverdata />
+      </server>
+      <server id="b77cb721-338e-4d28-b030-8837af80175c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c1ac3e9c-cdb0-4945-bcef-999dc189385f">
+        <serverdata />
+      </server>
+      <server id="c23e1582-175c-4f98-93aa-d8ea3cb9236d">
+        <serverdata />
+      </server>
+      <server id="c4d68c80-6c3a-4ac4-aee4-ff9a0598d9eb">
+        <serverdata />
+      </server>
+      <server id="c5e9ce87-0bbd-427e-b1d2-27ce472c5b19">
+        <serverdata />
+      </server>
+      <server id="c9a9d1f4-0a8e-4d99-84b3-59d7e23f2be3">
+        <serverdata />
+      </server>
+      <server id="ce95c155-a0c6-48dd-b6c5-bc8b1b856544">
+        <serverdata />
+      </server>
+      <server id="f2a52799-760d-4777-bf30-49f13940431f">
+        <serverdata />
+      </server>
+      <server id="fbf5afbe-bce0-461e-8d3e-a6c56292ffc1">
+        <serverdata />
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PrimePalindromeTests" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="" />
+      <created>1391449402807</created>
+      <updated>1391449402807</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1920" height="810" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18036287" sideWeight="0.67005813" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/longestCommonSubsequence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2310" selection-end="2310" vertical-scroll-proportion="1.9103774" vertical-offset="0" max-vertical-offset="1545">
+          <folding>
+            <element signature="e#6#89#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="19" selection-start="1319" selection-end="1319" vertical-scroll-proportion="0.6226415" vertical-offset="309" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PassTriangleTests/CalcMaxAdjSumTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="115" selection-end="208" vertical-scroll-proportion="0.18867925" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doubleSquares.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="113" selection-end="283" vertical-scroll-proportion="0.048154093" vertical-offset="0" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passTriangle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="116" selection-end="283" vertical-scroll-proportion="0.070754714" vertical-offset="0" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverseAndAdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1116" selection-end="1263" vertical-scroll-proportion="0.6226415" vertical-offset="294" max-vertical-offset="930">
+          <folding>
+            <element signature="e#6#90#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReverseAndAddTests/IsPalindromeTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="256" selection-end="667" vertical-scroll-proportion="0.3301887" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrimePalindromeTests/IsAPalindromeTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="461" selection-end="461" vertical-scroll-proportion="0.4716981" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrimePalindromeTests/GetPrimesUnderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="104" selection-end="119" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrimePalindromeTests/GetLargestPrimePalindromeUnderTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="315" selection-end="315" vertical-scroll-proportion="0.3301887" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/primePalindrome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="57" selection-start="1070" selection-end="1070" vertical-scroll-proportion="1.1232449" vertical-offset="0" max-vertical-offset="1125">
+          <folding>
+            <element signature="e#6#89#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoubleSquaresTests/RunDoubleSquaresTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="212" selection-end="212" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="689" selection-end="689" vertical-scroll-proportion="0.5877743" vertical-offset="0" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="90" selection-end="199" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="521" selection-end="521" vertical-scroll-proportion="0.44670847" vertical-offset="0" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/areaTwoRectangles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="97" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.7053292" vertical-offset="615" max-vertical-offset="2835">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

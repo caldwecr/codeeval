@@ -46,7 +46,7 @@ function isAPalindrome($value)
  * @return array
  * @throws Exception
  *
- * Generates an array of all primes less than the ceiling 
+ * Generates an array of all primes less than the ceiling
  */
 function getPrimesUnder($ceiling)
 {
