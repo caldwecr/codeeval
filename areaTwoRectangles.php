@@ -42,9 +42,6 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
     $r1 = new Rectangle($ll1, $ur1);
     $r2 = new Rectangle($ll2, $ur2);
 
-    $a1 = $r1->getArea();
-    $a2 = $r2->getArea();
-
     $pointsInside1 = array();
     $pointsInside2 = array();
 
@@ -93,6 +90,11 @@ function solution($A, $B, $C, $D, $K, $L, $M, $N)
     }
 }
 
+/**
+ * Class Point
+ *
+ * A point in two-dimensional space represented by an x and y coordinate
+ */
 class Point
 {
     /**
@@ -115,16 +117,39 @@ class Point
     }
 }
 
+/**
+ * Class Rectangle
+ *
+ * A rectangle in two dimensional space represented by x and y axes
+ *
+ * The vertices are listed in clockwise order starting with the upper left vertex
+ */
 class Rectangle
 {
+    /**
+     * @var Point
+     */
     protected $ul;
 
+    /**
+     * @var Point
+     */
     protected $ur;
 
+    /**
+     * @var Point
+     */
     protected $lr;
 
+    /**
+     * @var Point
+     */
     protected $ll;
 
+    /**
+     * @param Point $ll
+     * @param Point $ur
+     */
     public function __construct(Point $ll, Point $ur)
     {
         $this->ll = $ll;
@@ -133,6 +158,9 @@ class Rectangle
         $this->lr = new Point($ur->x, $ll->y);
     }
 
+    /**
+     * @return array
+     */
     public function getPoints()
     {
         return array(
@@ -143,16 +171,25 @@ class Rectangle
         );
     }
 
+    /**
+     * @return number
+     */
     public function getArea()
     {
         return $this->getLength() * $this->getHeight();
     }
 
+    /**
+     * @return number
+     */
     public function getLength()
     {
         return abs($this->ur->x - $this->ul->x);
     }
 
+    /**
+     * @return number
+     */
     public function getHeight()
     {
         return abs($this->ur->y - $this->lr->y);
@@ -168,6 +205,9 @@ class Rectangle
         return $this->ur->x;
     }
 
+    /**
+     * @return float
+     */
     public function getMinX()
     {
         return $this->ul->x;
@@ -183,11 +223,19 @@ class Rectangle
         return $this->ur->y;
     }
 
+    /**
+     * @return float
+     */
     public function getMinY()
     {
         return $this->lr->y;
     }
 
+    /**
+     * @param Rectangle $r
+     * @param Point $p
+     * @return bool
+     */
     public static function containsPoint(Rectangle $r, Point $p)
     {
        return   $p->x > $r->getMinX() &&
@@ -196,6 +244,11 @@ class Rectangle
                 $p->y < $r->getMaxY();
     }
 
+    /**
+     * @param array $pointsInside
+     * @param Rectangle $containingRectangle
+     * @return null|Rectangle
+     */
     public static function getIntersectingRectangleForTwoPoints($pointsInside, $containingRectangle)
     {
         $code = 0; // Using powers of two to identify which two corners (based on array keys) are inside the containing rectangle
