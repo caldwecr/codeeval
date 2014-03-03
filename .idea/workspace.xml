@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/biggestOfThreeTests/BiggestOfNTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/biggestOfThreeTests/BiggestOfThreeTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StrstrRedoTests/StrstrRedoTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/biggestOfThree.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strstrRedo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/areaTwoRectangles.php" afterPath="$PROJECT_DIR$/areaTwoRectangles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heapenson.php" afterPath="$PROJECT_DIR$/heapenson.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeeval.iws" />
@@ -31,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strstrRedo.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/strstrRedo.php">
+      <file leaf-file-name="heapenson.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/heapenson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="33" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="720">
+            <state line="13" column="63" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.11563877" vertical-offset="300" max-vertical-offset="3945">
               <folding>
                 <element signature="e#6#89#0" expanded="true" />
               </folding>
@@ -42,21 +41,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrstrRedoTest.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StrstrRedoTests/StrstrRedoTest.php">
+      <file leaf-file-name="ClassSorterTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.1645768" vertical-offset="0" max-vertical-offset="638">
-              <folding>
-                <element signature="e#6#89#0" expanded="true" />
-              </folding>
+            <state line="16" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="longestCommonSubsequence.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/longestCommonSubsequence.php">
+      <file leaf-file-name="HeapensonTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="37" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="1470">
+            <state line="14" column="7" selection-start="274" selection-end="274" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReduceToTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="40" selection-start="818" selection-end="818" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NormalizerTest.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HeapensonTests/NormalizerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="38" selection-start="589" selection-end="589" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="690">
               <folding />
             </state>
           </provider>
@@ -80,11 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/PrimePalindromeTests/IsPrimePalindromeTest.php" />
-        <option value="$PROJECT_DIR$/PrimePalindromeTests/IsAPalindromeTest.php" />
-        <option value="$PROJECT_DIR$/PrimePalindromeTests/GetLargestPrimePalindromeUnderTest.php" />
-        <option value="$PROJECT_DIR$/primePalindrome.php" />
-        <option value="$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/DistanceBetweenTwoPointsTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php" />
         <option value="$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php" />
@@ -96,15 +106,19 @@
         <option value="$PROJECT_DIR$/biggestOfThree.php" />
         <option value="$PROJECT_DIR$/strstrRedo.php" />
         <option value="$PROJECT_DIR$/StrstrRedoTests/StrstrRedoTest.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" />
+        <option value="$PROJECT_DIR$/heapenson.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1639" />
-    <option name="y" value="80" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="x" value="-1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -132,6 +146,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,7 +175,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StrstrRedoTests" />
+              <option name="myItemId" value="HeapensonTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -174,41 +189,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LongestCommonSubsequenceTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeeval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeeval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DoubleSquaresTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeeval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeeval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biggestOfThreeTests" />
+              <option name="myItemId" value="fizzbuzzTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,8 +202,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" serverName="codeeval" serverId="b77cb721-338e-4d28-b030-8837af80175c">
     <servers>
@@ -306,7 +292,7 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="b77cb721-338e-4d28-b030-8837af80175c" server_name="codeeval">
       <method />
     </configuration>
     <list size="0" />
@@ -338,27 +324,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1639" y="80" width="1440" height="810" extended-state="6" />
+    <frame x="-1920" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24246772" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18303095" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289855" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -373,126 +359,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/primePalindrome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="57" selection-start="1070" selection-end="1070" vertical-scroll-proportion="1.1232449" vertical-offset="0" max-vertical-offset="1125">
-          <folding>
-            <element signature="e#6#89#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DoubleSquaresTests/RunDoubleSquaresTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="84" selection-end="84" vertical-scroll-proportion="0.11755486" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/GetAreaTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/SolutionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="0.09404389" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/ContainsPointTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="0.09404389" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectanglesTests/GetIntersectingRectangleForTwoPointsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="0.09404389" vertical-offset="0" max-vertical-offset="638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/areaTwoRectangles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="1767" selection-end="1767" vertical-scroll-proportion="1.008" vertical-offset="0" max-vertical-offset="4410">
-          <folding>
-            <element signature="e#6#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fizzbuzz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.023510972" vertical-offset="60" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.023510972" vertical-offset="60" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fizzbuzz_input.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02265861" vertical-offset="0" max-vertical-offset="662">
-          <folding />
-        </state>
+        <state line="1" column="6" selection-start="13" selection-end="13" vertical-scroll-proportion="0.02265861" vertical-offset="0" max-vertical-offset="662" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleSquaresTests/DijkstraDoubleSquaresTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="113" selection-end="215" vertical-scroll-proportion="0.18808778" vertical-offset="0" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="113" selection-end="215" vertical-scroll-proportion="0.18808778" vertical-offset="0" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biggestOfThree.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="51" selection-start="654" selection-end="654" vertical-scroll-proportion="0.86990595" vertical-offset="0" max-vertical-offset="660">
-          <folding>
-            <element signature="e#6#89#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="37" column="51" selection-start="654" selection-end="654" vertical-scroll-proportion="0.86990595" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biggestOfThreeTests/BiggestOfThreeTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="90" selection-end="187" vertical-scroll-proportion="0.1645768" vertical-offset="0" max-vertical-offset="638">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/longestCommonSubsequence.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="37" selection-start="1700" selection-end="1700" vertical-scroll-proportion="-37.5" vertical-offset="0" max-vertical-offset="1470">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="90" selection-end="187" vertical-scroll-proportion="0.1645768" vertical-offset="0" max-vertical-offset="638" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biggestOfThreeTests/BiggestOfNTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="91" selection-end="185" vertical-scroll-proportion="0.18808778" vertical-offset="0" max-vertical-offset="638">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
+        <state line="8" column="0" selection-start="91" selection-end="185" vertical-scroll-proportion="0.18808778" vertical-offset="0" max-vertical-offset="638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doubleSquares.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="998" selection-end="998" vertical-scroll-proportion="0.5644654" vertical-offset="181" max-vertical-offset="840">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/strstrRedo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="1014" selection-end="1014" vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="720">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
+        <state line="28" column="33" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.5314465" vertical-offset="7" max-vertical-offset="645">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StrstrRedoTests/StrstrRedoTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.1645768" vertical-offset="0" max-vertical-offset="638">
+        <state line="7" column="0" selection-start="90" selection-end="90" vertical-scroll-proportion="0.047169812" vertical-offset="0" max-vertical-offset="636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fizzbuzzTests/FizzBuzzTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="114" selection-end="199" vertical-scroll-proportion="0.18171807" vertical-offset="0" max-vertical-offset="908">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/longestCommonSubsequence.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="805" selection-end="2621" vertical-scroll-proportion="-0.02202643" vertical-offset="560" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="274" selection-end="274" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="40" selection-start="818" selection-end="818" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/NormalizerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="38" selection-start="589" selection-end="589" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heapenson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="63" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.11563877" vertical-offset="300" max-vertical-offset="3945">
           <folding>
             <element signature="e#6#89#0" expanded="true" />
           </folding>
