@@ -23,12 +23,12 @@ function heapenson($h1, $h2)
     classSorter($h1);
     classSorter($h2);
     $lcs = getLCS($h1, $h2);
-    //var_dump($h1, $h2, $lcs);
+    var_dump($h1, $h2, $lcs);
     $opCount = 0;
     $reducedH1 = reduceTo($h1, $lcs, $opCount);
-    //var_dump($opCount);
+    var_dump($opCount);
     $insertedH1 = insertTo($reducedH1, $h2, $opCount);
-    //var_dump($opCount);
+    var_dump($opCount);
     return $opCount;
 }
 
@@ -82,6 +82,9 @@ function insertTo($insertIntoMe, $target, &$operationCounter)
         if($value != $iArr[$key + $offset]) {
             $offset--;
             $operationCounter++;
+            if($value == '*' || $value == '{' || $value == '}') {
+                $operationCounter --;
+            }
         }
     }
     return $target;

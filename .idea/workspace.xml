@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heapenson.php" afterPath="$PROJECT_DIR$/heapenson.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeeval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="heapenson.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="heapenson.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heapenson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="63" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.11563877" vertical-offset="300" max-vertical-offset="3945">
+            <state line="76" column="1" selection-start="2389" selection-end="2389" vertical-scroll-proportion="-15.625" vertical-offset="765" max-vertical-offset="3990">
               <folding>
                 <element signature="e#6#89#0" expanded="true" />
               </folding>
@@ -50,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapensonTest.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HeapensonTest.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="274" selection-end="274" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="825">
+            <state line="84" column="40" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.68715084" vertical-offset="645" max-vertical-offset="2340">
               <folding />
             </state>
           </provider>
@@ -108,9 +104,9 @@
         <option value="$PROJECT_DIR$/StrstrRedoTests/StrstrRedoTest.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/NormalizerTest.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php" />
-        <option value="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" />
         <option value="$PROJECT_DIR$/heapenson.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
       </list>
     </option>
   </component>
@@ -424,20 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="274" selection-end="274" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="40" selection-start="818" selection-end="818" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="570">
@@ -452,12 +434,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/ClassSorterTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heapenson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.11563877" vertical-offset="300" max-vertical-offset="3945">
+        <state line="76" column="1" selection-start="2389" selection-end="2389" vertical-scroll-proportion="-15.625" vertical-offset="765" max-vertical-offset="3990">
           <folding>
             <element signature="e#6#89#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="40" selection-start="2201" selection-end="2201" vertical-scroll-proportion="0.68715084" vertical-offset="645" max-vertical-offset="2340">
+          <folding />
         </state>
       </provider>
     </entry>
