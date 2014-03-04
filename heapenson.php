@@ -27,7 +27,7 @@ function heapenson($h1, $h2)
     $lcs = getLCSDynamicProgramming($h1, $h2);
     var_dump($h1, $h2, $lcs);
     $opCount = 0;
-    $reducedH1 = reduceTo($h1, $lcs, $opCount);
+    $reducedH1 = reduceToV2($h1, $lcs, $opCount);
     var_dump($opCount);
     $insertedH1 = insertTo($reducedH1, $h2, $opCount);
     var_dump($opCount);
@@ -43,46 +43,6 @@ function capsElements(&$foo)
     $foo = implode('*', $fArr);
 }
 
-function reduceTo($reduceMe, $lcs, &$operationCounter)
-{
-    $rArr = explode('*', $reduceMe);
-    $lcsArr = explode('*', $lcs);
-    $reduced = array();
-    $offset = 0;
-    $originalOperationCounter = $operationCounter;
-    foreach($rArr as $key => $value) {
-        if(!array_key_exists($key+$offset, $lcsArr) || $value != $lcsArr[$key + $offset]) {
-            $operationCounter++;
-            $offset--;
-        } else {
-            $reduced[] = $value;
-        }
-    }
-    $reducedStr = implode('', $reduced);
-    $lcsStr = implode('', $lcsArr);
-    // Normalize empty class lists before performing comparison of lcs and reduced
-    $lcsStr = str_replace('{}', '', $lcsStr);
-    if($reducedStr != $lcsStr) {
-        //var_dump($reducedStr, $lcsStr);
-        $operationCounter = $originalOperationCounter;
-        // Need to perform reduction at the id / class lvl
-        $rArr = str_split($reduceMe);
-        $lcsArr = str_split($lcs);
-        $offset = 0;
-        foreach($rArr as $key => $value) {
-            if(!array_key_exists($key+$offset, $lcsArr) || $value != $lcsArr[$key + $offset]) {
-                $operationCounter++;
-                $offset--;
-                if($value == '{' || $value == '}') {
-                    $operationCounter--;
-                }
-            } else {
-                $reduced[] = $value;
-            }
-        }
-    }
-    return $lcs;
-}
 
 function reduceToV2($reduceMe, $lcs, &$operationCounter)
 {

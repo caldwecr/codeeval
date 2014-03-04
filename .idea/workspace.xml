@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0f28102-01c0-4251-a62a-0e7533fd7900" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" afterPath="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php" afterPath="$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/heapenson.php" afterPath="$PROJECT_DIR$/heapenson.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeeval.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,16 +32,16 @@
       <file leaf-file-name="HeapensonTest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="89" selection-end="175" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="4245">
+            <state line="79" column="9" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-11.25" vertical-offset="915" max-vertical-offset="4230">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heapenson.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="heapenson.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heapenson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="60" selection-start="4291" selection-end="4291" vertical-scroll-proportion="-14.265306" vertical-offset="1281" max-vertical-offset="5385">
+            <state line="45" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="1.1083744" vertical-offset="0" max-vertical-offset="4785">
               <folding>
                 <element signature="e#6#89#0" expanded="true" />
               </folding>
@@ -46,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReduceToV2Test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ReduceToV2Test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="28" selection-start="925" selection-end="925" vertical-scroll-proportion="0.78075707" vertical-offset="0" max-vertical-offset="705">
+            <state line="36" column="36" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-20.625" vertical-offset="45" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -93,17 +96,18 @@
         <option value="$PROJECT_DIR$/longestCommonSubsequence.php" />
         <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSDynamicProgrammingTest.php" />
         <option value="$PROJECT_DIR$/LongestCommonSubsequenceTests/GetLCSTest.php" />
-        <option value="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/CapsElementsTest.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/ReduceToTest.php" />
-        <option value="$PROJECT_DIR$/heapenson.php" />
         <option value="$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php" />
+        <option value="$PROJECT_DIR$/HeapensonTests/HeapensonTest.php" />
+        <option value="$PROJECT_DIR$/heapenson.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="-1777" />
+    <option name="y" value="135" />
     <option name="width" value="1440" />
     <option name="height" value="806" />
   </component>
@@ -325,15 +329,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="806" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1777" y="135" width="1440" height="806" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.6710145" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -442,33 +446,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToTest.php">
+    <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="89" selection-end="1077" vertical-scroll-proportion="0.16561514" vertical-offset="0" max-vertical-offset="645">
+        <state line="36" column="36" selection-start="1031" selection-end="1031" vertical-scroll-proportion="-20.625" vertical-offset="45" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HeapensonTests/HeapensonTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="89" selection-end="175" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="4245">
+        <state line="79" column="9" selection-start="2039" selection-end="2039" vertical-scroll-proportion="-11.25" vertical-offset="915" max-vertical-offset="4230">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/heapenson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="60" selection-start="4291" selection-end="4291" vertical-scroll-proportion="-14.265306" vertical-offset="1281" max-vertical-offset="5385">
+        <state line="45" column="0" selection-start="1189" selection-end="1189" vertical-scroll-proportion="1.1083744" vertical-offset="0" max-vertical-offset="4785">
           <folding>
             <element signature="e#6#89#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HeapensonTests/ReduceToV2Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="28" selection-start="925" selection-end="925" vertical-scroll-proportion="0.78075707" vertical-offset="0" max-vertical-offset="705">
-          <folding />
         </state>
       </provider>
     </entry>

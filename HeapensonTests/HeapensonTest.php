@@ -78,7 +78,6 @@ class HeapensonTest extends PHPUnit_Framework_TestCase
         div#id span.text a#link.btn
         a#id.btn
         4
-        @todo fix for this test case
         Issue here is that there are more than one LCS of length 2 and the first one my algorithm discovers produces the less optimal solution -
         perhaps the algorithm should consider all of the LCS possibilities.
         */
