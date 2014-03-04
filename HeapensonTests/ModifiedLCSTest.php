@@ -23,5 +23,11 @@ class ModifiedLCSTest extends PHPUnit_Framework_TestCase
         $result = getLCSDynamicProgramming($foo, $bar);
         $this->assertEquals('*A{c}', $result);
 
+        // $foo = '*A{bc}*D{e}*D{f}*G{h}*I*J{k}', $bar = '*A{bc}*D{e}*D{f}*D{l}*M{nop}', expected result = '*A{bc}*D{e}*D{f}'
+        $foo = '*A{bc}*D{e}*D{f}*G{h}*I*J{k}';
+        $bar = '*A{bc}*D{e}*D{f}*D{l}*M{nop}';
+        $result = getLCSDynamicProgramming($foo, $bar);
+        $this->assertEquals('*A{bc}*D{e}*D{f}', $result);
+
     }
 }

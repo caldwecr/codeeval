@@ -44,5 +44,14 @@ class NormalizerTest extends PHPUnit_Framework_TestCase
         normalizer($foo, $bar);
         $this->assertEquals('*a{b}*cd*e{f}', $foo);
         $this->assertEquals('*cd*e{fg}*a{bhi}', $bar);
+
+        //header.cf.header div.nav-bar div.lc form.search-form fieldset input.search-field
+        //header.cf.header div.nav-bar div.lc div.header-social ul.inline-list.social-list.sprite-social
+        // expected outputs: '*a{bc}*d{e}*d{f}*g{h}*i*j{k}', '*a{bc}*d{e}*d{f}*d{l}*m{nop}'
+        $foo = 'header.cf.header div.nav-bar div.lc form.search-form fieldset input.search-field';
+        $bar = 'header.cf.header div.nav-bar div.lc div.header-social ul.inline-list.social-list.sprite-social';
+        normalizer($foo, $bar);
+        $this->assertEquals('*a{bc}*d{e}*d{f}*g{h}*i*j{k}', $foo);
+        $this->assertEquals('*a{bc}*d{e}*d{f}*d{l}*m{nop}', $bar);
     }
 }

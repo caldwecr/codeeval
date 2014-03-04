@@ -27,10 +27,11 @@ function heapenson($h1, $h2)
     $lcs = getLCSDynamicProgramming($h1, $h2);
     var_dump($h1, $h2, $lcs);
     $opCount = 0;
-    $reducedH1 = reduceToV2($h1, $lcs, $opCount);
-    var_dump("After reduction total opCount = {$opCount}");
-    $insertedH1 = insertTo($reducedH1, $h2, $opCount);
-    var_dump("After insertion total opCount = {$opCount}");
+    $changeableCount = 0;
+    $reducedH1 = reduceToV2($h1, $lcs, $opCount, $changeableCount);
+    var_dump("After reduction total opCount = {$opCount}, changeableCount = {$changeableCount}");
+    $insertedH1 = insertTo($reducedH1, $h2, $opCount, $changeableCount);
+    var_dump("After insertion total opCount = {$opCount}, changeableCount = {$changeableCount}");
     return $opCount;
 }
 
@@ -44,7 +45,7 @@ function capsElements(&$foo)
 }
 
 
-function reduceToV2($reduceMe, $lcs, &$operationCounter)
+function reduceToV2($reduceMe, $lcs, &$operationCounter, &$changeableCount = 0)
 {
     $rArr = explode('*', $reduceMe);
     $lArr = explode('*', $lcs);
@@ -59,12 +60,22 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
                 unset($rArr[$key]);
                 $offset--;
                 $operationCounter++;
+                if(strlen($value) == 1) {
+                    // This means that the element being reduced has no id or class and could more efficiently be changed
+                    // to a different element type in a single operation instead of a remove and add
+                    $changeableCount++;
+                }
                 //var_dump('ELEMENT REDUCED');
             }
         } else {
             unset($rArr[$key]);
             $offset--;
             $operationCounter++;
+            if(strlen($value) == 1) {
+                // This means that the element being reduced has no id or class and could more efficiently be changed
+                // to a different element type in a single operation instead of a remove and add
+                $changeableCount++;
+            }
             //var_dump('ELEMENT REDUCED');
         }
     }
@@ -110,7 +121,7 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
     return $lcs;
 }
 
-function insertTo($insertIntoMe, $target, &$operationCounter)
+function insertTo($insertIntoMe, $target, &$operationCounter, &$changeableCount = 0)
 {
     $iArr = str_split($insertIntoMe);
     $tArr = str_split($target);
@@ -121,6 +132,11 @@ function insertTo($insertIntoMe, $target, &$operationCounter)
         if(!array_key_exists($key + $offset, $iArr) || $value != $iArr[$key + $offset]) {
             $offset--;
             $operationCounter++;
+            if(array_key_exists($key - 1, $tArr) && $tArr[$key - 1] && $changeableCount > 0) {
+                // Use up a changeable to add an element
+                $operationCounter--;
+                $changeableCount--;
+            }
             if($value == '*' || $value == '{' || $value == '}') {
                 $operationCounter --;
             }
@@ -300,7 +316,8 @@ function getLCSDynamicProgramming($left, $right)
         //var_dump($toReturn);
         $toReturn = getLCSDynamicProgramming($left, $right);
     }
-    return $toReturn;
+    // Finally reduce any empty elements to a string of zero characters
+    return str_replace('*{}', '', $toReturn);
 }
 
 function buildArray($left, $right, &$arr)
