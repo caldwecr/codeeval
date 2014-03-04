@@ -38,5 +38,10 @@ class ReduceToV2Test extends PHPUnit_Framework_TestCase
         $count = 0;
         $result = reduceToV2('*Ab*C{d}*Ef{g}', '*E{g}', $count);
         $this->assertEquals(3, $count);
+
+        // $rMe = '*A{b}*Cd*E{f}', lcs = '*Cd*E{f}', expected count = 1
+        $count = 0;
+        $result = reduceToV2('*A{b}*Cd*E{f}', '*Cd*E{f}', $count);
+        $this->assertEquals(1, $count);
     }
 }

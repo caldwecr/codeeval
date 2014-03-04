@@ -28,9 +28,9 @@ function heapenson($h1, $h2)
     var_dump($h1, $h2, $lcs);
     $opCount = 0;
     $reducedH1 = reduceToV2($h1, $lcs, $opCount);
-    var_dump($opCount);
+    var_dump("After reduction total opCount = {$opCount}");
     $insertedH1 = insertTo($reducedH1, $h2, $opCount);
-    var_dump($opCount);
+    var_dump("After insertion total opCount = {$opCount}");
     return $opCount;
 }
 
@@ -54,18 +54,18 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
         if(array_key_exists($key + $offset, $lArr)) {
             $r = substr($value, 0, 1);
             $l = substr($lArr[$key + $offset], 0, 1);
-            var_dump($r, $l);
+            //var_dump($r, $l);
             if($r != $l) {
                 unset($rArr[$key]);
                 $offset--;
                 $operationCounter++;
-                var_dump('ELEMENT REDUCED');
+                //var_dump('ELEMENT REDUCED');
             }
         } else {
             unset($rArr[$key]);
             $offset--;
             $operationCounter++;
-            var_dump('ELEMENT REDUCED');
+            //var_dump('ELEMENT REDUCED');
         }
     }
 
@@ -74,7 +74,7 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
 
     // Redo the keys on the rArr so the unsetted items won't interfere with iteration across $lArr
     $rArr = array_values($rArr);
-    var_dump($rArr, $lArr);
+    //var_dump($rArr, $lArr);
 
     foreach($rArr as $key => $value) {
         $rId = substr($value, 1, 1);
@@ -83,7 +83,7 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
             if($rId != $lId) {
                 $rArr[$key] = str_replace($rId, '', $value);
                 $operationCounter++;
-                var_dump('ID REDUCED');
+                //var_dump('ID REDUCED');
             }
         }
         $rClassListStartIndex = strpos($value, '{') + 1;
@@ -99,7 +99,7 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
             if($iValue && strpos($lClassList, $iValue) === false) {
                 unset($rCLArr[$iKey]);
                 $operationCounter++;
-                var_dump("CLASS REDUCED {$iValue}");
+                //var_dump("CLASS REDUCED {$iValue}");
             }
         }
         $newRClassList = implode('', $rCLArr);
@@ -115,14 +115,17 @@ function insertTo($insertIntoMe, $target, &$operationCounter)
     $iArr = str_split($insertIntoMe);
     $tArr = str_split($target);
     $offset = 0;
+    //var_dump($iArr);
     foreach($tArr as $key => $value) {
-        if($value != $iArr[$key + $offset]) {
+        //var_dump($key + $offset);
+        if(!array_key_exists($key + $offset, $iArr) || $value != $iArr[$key + $offset]) {
             $offset--;
             $operationCounter++;
             if($value == '*' || $value == '{' || $value == '}') {
                 $operationCounter --;
             }
         }
+        //var_dump($operationCounter);
     }
     return $target;
 }
@@ -244,19 +247,29 @@ function normalizerHelper($arr, &$currentChar, &$currentSubstring, &$replacement
  * @param $right
  * @return string
  *
- * Algorithm from wikipedia - converted from java
+ * Algorithm from wikipedia - converted from java, modified for use
  */
 function getLCSDynamicProgramming($left, $right)
 {
     $lengths = array();
     buildArray($left, $right, $lengths);
+    $lLength = strlen($left);
+    $rLength = strlen($right);
+
+    // Whenever we find a meaningful character in the progression increment the score by this amount,
+    // non-meaningful (grammaitcal characters like *, {, and } receive 1 point thus the string is correctly
+    // reassembled by the DP alogrithm, and yet the grammatical characters cannot be counted so much
+    // that the wrong path is selected.
+    $significantCharacterIncrement = $lLength * $rLength;
 
     $lArr = str_split($left);
     $rArr = str_split($right);
     for($i = 0; $i < strlen($left); $i++) {
         for($j = 0; $j < strlen($right); $j++) {
             if($lArr[$i] == $rArr[$j]) {
-                $lengths[$i + 1][$j + 1] = $lengths[$i][$j] + 1;
+                if($lArr[$i] == '*' || $lArr[$i] == '{' || $lArr[$i] == '}') {
+                    $lengths[$i + 1][$j + 1] = $lengths[$i][$j] + 1;
+                } else $lengths[$i + 1][$j + 1] = $lengths[$i][$j] + $significantCharacterIncrement;
             } else {
                 $lengths[$i + 1][$j + 1] = max($lengths[$i + 1][$j], $lengths[$i][$j + 1]);
             }
@@ -281,10 +294,10 @@ function getLCSDynamicProgramming($left, $right)
     $sub = substr($toReturn, 1);
     if($sub != '{}' && $sub == lcfirst($sub)) {
         // This is an invalid LCS because it begins like *x, valid LCS begin like *X
-
         $charToRemove = substr($sub, 0, 1);
         $left = str_replace($charToRemove, '', $left);
         $right = str_replace($charToRemove, '', $right);
+        //var_dump($toReturn);
         $toReturn = getLCSDynamicProgramming($left, $right);
     }
     return $toReturn;

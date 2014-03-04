@@ -36,5 +36,13 @@ class NormalizerTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('*ab{cd}', $foo);
         $this->assertEquals('*ab{dc}', $bar);
 
+        //        a.btn div#id img.photo
+        //        div#id img.photo.bw a.btn.share.link
+        // expected outputs: '*a{b}*cd*e{f}, '*cd*e{fg}*a{bhi}
+        $foo = 'a.btn div#id img.photo';
+        $bar = 'div#id img.photo.bw a.btn.share.link';
+        normalizer($foo, $bar);
+        $this->assertEquals('*a{b}*cd*e{f}', $foo);
+        $this->assertEquals('*cd*e{fg}*a{bhi}', $bar);
     }
 }
