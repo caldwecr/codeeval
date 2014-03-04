@@ -126,11 +126,11 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
                 var_dump('ID REDUCED');
             }
         }
-        $rClassListStartIndex = strpos($value, '{');
+        $rClassListStartIndex = strpos($value, '{') + 1;
         $rClassListLength = strpos($value, '}') - $rClassListStartIndex;
         $rClassList = substr($value, $rClassListStartIndex, $rClassListLength);
 
-        $lClassListStartIndex = strpos($lArr[$key], '{');
+        $lClassListStartIndex = strpos($lArr[$key], '{') + 1;
         $lClassListLength = strpos($lArr[$key], '}') - $lClassListStartIndex;
         $lClassList = substr($lArr[$key], $lClassListStartIndex, $lClassListLength);
         $rCLArr = str_split($rClassList);
@@ -139,7 +139,7 @@ function reduceToV2($reduceMe, $lcs, &$operationCounter)
             if($iValue && strpos($lClassList, $iValue) === false) {
                 unset($rCLArr[$iKey]);
                 $operationCounter++;
-                var_dump('CLASS REDUCED');
+                var_dump("CLASS REDUCED {$iValue}");
             }
         }
         $newRClassList = implode('', $rCLArr);
