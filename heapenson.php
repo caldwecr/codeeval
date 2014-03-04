@@ -22,7 +22,9 @@ function heapenson($h1, $h2)
     normalizer($h1, $h2);
     classSorter($h1);
     classSorter($h2);
-    $lcs = getLCS($h1, $h2);
+    capsElements($h1);
+    capsElements($h2);
+    $lcs = getLCSDynamicProgramming($h1, $h2);
     var_dump($h1, $h2, $lcs);
     $opCount = 0;
     $reducedH1 = reduceTo($h1, $lcs, $opCount);
@@ -30,6 +32,15 @@ function heapenson($h1, $h2)
     $insertedH1 = insertTo($reducedH1, $h2, $opCount);
     var_dump($opCount);
     return $opCount;
+}
+
+function capsElements(&$foo)
+{
+    $fArr = explode('*', $foo);
+    foreach($fArr as $key => $value) {
+        $fArr[$key] = ucwords($value);
+    }
+    $foo = implode('*', $fArr);
 }
 
 function reduceTo($reduceMe, $lcs, &$operationCounter)
@@ -70,6 +81,72 @@ function reduceTo($reduceMe, $lcs, &$operationCounter)
             }
         }
     }
+    return $lcs;
+}
+
+function reduceToV2($reduceMe, $lcs, &$operationCounter)
+{
+    $rArr = explode('*', $reduceMe);
+    $lArr = explode('*', $lcs);
+    // Remove the elements from reduceMe that do not occur in the lcs
+    $offset = 0;
+    foreach($rArr as $key => $value) {
+        if(array_key_exists($key + $offset, $lArr)) {
+            $r = substr($value, 0, 1);
+            $l = substr($lArr[$key + $offset], 0, 1);
+            var_dump($r, $l);
+            if($r != $l) {
+                unset($rArr[$key]);
+                $offset--;
+                $operationCounter++;
+                var_dump('ELEMENT REDUCED');
+            }
+        } else {
+            unset($rArr[$key]);
+            $offset--;
+            $operationCounter++;
+            var_dump('ELEMENT REDUCED');
+        }
+    }
+
+    // Explode reduceMe and lcs into their elements (explode on *)
+    // Foreach explodedReduceMe remove id's and classes that are not in the corresponding lcs
+
+    // Redo the keys on the rArr so the unsetted items won't interfere with iteration across $lArr
+    $rArr = array_values($rArr);
+    var_dump($rArr, $lArr);
+
+    foreach($rArr as $key => $value) {
+        $rId = substr($value, 1, 1);
+        $lId = substr($lArr[$key], 1, 1);
+        if($rId && $rId != '{') {
+            if($rId != $lId) {
+                $rArr[$key] = str_replace($rId, '', $value);
+                $operationCounter++;
+                var_dump('ID REDUCED');
+            }
+        }
+        $rClassListStartIndex = strpos($value, '{');
+        $rClassListLength = strpos($value, '}') - $rClassListStartIndex;
+        $rClassList = substr($value, $rClassListStartIndex, $rClassListLength);
+
+        $lClassListStartIndex = strpos($lArr[$key], '{');
+        $lClassListLength = strpos($lArr[$key], '}') - $lClassListStartIndex;
+        $lClassList = substr($lArr[$key], $lClassListStartIndex, $lClassListLength);
+        $rCLArr = str_split($rClassList);
+
+        foreach($rCLArr as $iKey => $iValue) {
+            if($iValue && strpos($lClassList, $iValue) === false) {
+                unset($rCLArr[$iKey]);
+                $operationCounter++;
+                var_dump('CLASS REDUCED');
+            }
+        }
+        $newRClassList = implode('', $rCLArr);
+        $rArr[$key] = str_replace('{' . $rClassList . '}', '{' . $newRClassList . '}', $value);
+    }
+    $reduceMe = implode('*', $rArr);
+    //if($reduceMe != $lcs) throw new Exception("Reduced string does not equal LCS in reduceToV2. reduced ={$reduceMe}, lcs = {$lcs}");
     return $lcs;
 }
 
@@ -203,59 +280,75 @@ function normalizerHelper($arr, &$currentChar, &$currentSubstring, &$replacement
 }
 
 /**
- * @param string $left
- * @param string $right
+ * @param $left
+ * @param $right
  * @return string
  *
- * This method takes two strings and returns a string containing the longest common subsequence
- *
- * I really want to do this iteratively, but for simplicity I'm going to do it recursively and if
- * the performance is poor I will try and make the conversion to an iterative solution
+ * Algorithm from wikipedia - converted from java
  */
-function getLCS($left, $right)
+function getLCSDynamicProgramming($left, $right)
 {
-    $lCount = strlen($left);
-    $rCount = strlen($right);
-    if($rCount < $lCount) {
-        // Avoid duplicate coding of situations below by flipping operands
-        // This lets us assume that there are at least as many chars in right as in left
-        return getLCS($right, $left);
-    }
-    if($lCount === 0) {
-        // There can't be a match return ''
-        return '';
-    } else if($lCount === 1) {
-        // There can be at most a one character LCS
-        $pos = strpos($right, $left);
-        if($pos !== false) {
-            return $left;
-        } else {
-            return '';
+    $lengths = array();
+    buildArray($left, $right, $lengths);
+
+    $lArr = str_split($left);
+    $rArr = str_split($right);
+    for($i = 0; $i < strlen($left); $i++) {
+        for($j = 0; $j < strlen($right); $j++) {
+            if($lArr[$i] == $rArr[$j]) {
+                $lengths[$i + 1][$j + 1] = $lengths[$i][$j] + 1;
+            } else {
+                $lengths[$i + 1][$j + 1] = max($lengths[$i + 1][$j], $lengths[$i][$j + 1]);
+            }
         }
-    } else {
-        $l = str_split($left);
-        $r = str_split($right);
-        if(strpos($right, $l[0]) !== false) {
-            $opt1 = '' . $l[0] . getLCS(getSubstringStartingAfter($l[0], $left), getSubstringStartingAfter($l[0], $right));
-            $opt2 = '' . getLCS(getSubstringStartingAfter($l[0], $left), $right);
-            return (strlen($opt1) > strlen($opt2) ? $opt1 : $opt2);
+    }
+    //prettyPrintArray($lengths);
+    $s = '';
+    for($x = strlen($left), $y = strlen($right);
+        $x != 0 && $y != 0;
+    ) {
+        if($lengths[$x][$y] == $lengths[$x - 1][$y]) {
+            $x--;
+        } else if($lengths[$x][$y] == $lengths[$x][$y - 1]) {
+            $y--;
         } else {
-            return '' . getLCS(getSubstringStartingAfter($l[0], $left), $right);
+            $s .= $lArr[$x - 1];
+            $x--;
+            $y--;
+        }
+    }
+    $toReturn = strrev($s);
+    $sub = substr($toReturn, 1);
+    if($sub != '{}' && $sub == lcfirst($sub)) {
+        // This is an invalid LCS because it begins like *x, valid LCS begin like *X
+
+        $charToRemove = substr($sub, 0, 1);
+        $left = str_replace($charToRemove, '', $left);
+        $right = str_replace($charToRemove, '', $right);
+        $toReturn = getLCSDynamicProgramming($left, $right);
+    }
+    return $toReturn;
+}
+
+function buildArray($left, $right, &$arr)
+{
+    // Initialize row with index 0 to value 0 and column with index 0 to value 0
+    for($i = 0; $i <= strlen($left); $i++) {
+        $arr[$i] = array();
+        for($j = 0; $j <= strlen($right); $j++) {
+            $arr[$i][$j] = 0;
         }
     }
 }
 
-/**
- * @param string $needle
- * @param string $haystack
- * @return string
- */
-function getSubstringStartingAfter($needle, $haystack)
+function prettyPrintArray($twoDArray)
 {
-    // First find the starting index
-    $pos = strpos($haystack, $needle);
-    if($pos === false) {
-        return '';
+    $toReturn = '';
+    foreach($twoDArray as $outerKey => $outerValue) {
+        foreach($outerValue as $innerKey => $innerValue) {
+            $toReturn .= '|' . $innerValue;
+        }
+        $toReturn .= "\n";
     }
-    return substr($haystack, $pos + 1);
+    echo $toReturn;
 }

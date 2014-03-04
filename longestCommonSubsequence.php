@@ -96,3 +96,55 @@ function getSubstringStartingAfter($needle, $haystack)
     }
     return substr($haystack, $pos + 1);
 }
+
+function buildArray($left, $right, &$arr)
+{
+    // Initialize row with index 0 to value 0 and column with index 0 to value 0
+    for($i = 0; $i <= strlen($left); $i++) {
+        $arr[$i] = array();
+        for($j = 0; $j <= strlen($right); $j++) {
+            $arr[$i][$j] = 0;
+        }
+    }
+}
+
+/**
+ * @param $left
+ * @param $right
+ * @return string
+ *
+ * Algorithm from wikipedia - converted from java
+ */
+function getLCSDynamicProgramming($left, $right)
+{
+    $lengths = array();
+    buildArray($left, $right, $lengths);
+
+    $lArr = str_split($left);
+    $rArr = str_split($right);
+    for($i = 0; $i < strlen($left); $i++) {
+        for($j = 0; $j < strlen($right); $j++) {
+            if($lArr[$i] == $rArr[$j]) {
+                $lengths[$i + 1][$j + 1] = $lengths[$i][$j] + 1;
+            } else {
+                $lengths[$i + 1][$j + 1] = max($lengths[$i + 1][$j], $lengths[$i][$j + 1]);
+            }
+        }
+    }
+
+    $s = '';
+    for($x = strlen($left), $y = strlen($right);
+        $x != 0 && $y != 0;
+    ) {
+        if($lengths[$x][$y] == $lengths[$x - 1][$y]) {
+            $x--;
+        } else if($lengths[$x][$y] == $lengths[$x][$y - 1]) {
+            $y--;
+        } else {
+            $s .= $lArr[$x - 1];
+            $x--;
+            $y--;
+        }
+    }
+    return strrev($s);
+}

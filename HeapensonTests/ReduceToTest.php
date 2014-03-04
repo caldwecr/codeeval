@@ -26,8 +26,13 @@ class ReduceToTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(2, $count);*/
 
         // $rMe = '*ab{c}', lcs = '*d{e}', expected count = 1
-        $count = 0;
+        /*$count = 0;
         $result = reduceTo('*ab{c}', '*{}', $count);
-        $this->assertEquals(1, $count);
+        $this->assertEquals(1, $count); */
+
+        // $rMe = '*Ab*C{d}*Ef{g}', lcs = '*E{g}', expected count = 3
+        $count = 0;
+        $result = reduceTo('*Ab*C{d}*Ef{g}', '*E{g}', $count);
+        $this->assertEquals(3, $count);
     }
 }
